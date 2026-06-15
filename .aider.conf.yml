@@ -18,3 +18,6 @@ auto-commits: false
 
 # Skip browser-based auth
 no-browser: true
+
+# Load conventions file with instructions on context search and vault usage
+conventions: .aider.conventions.md
