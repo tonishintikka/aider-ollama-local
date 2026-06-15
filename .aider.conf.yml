@@ -1,0 +1,17 @@
+# Aider default config for local Ollama usage.
+# Copy this to your project root and adjust model as needed.
+
+model: ollama_chat/qwen2.5-coder:32b
+
+# Aider manages context size automatically for Ollama — no need to set manually.
+# Uncomment to pin context window if model behaves unexpectedly:
+# ollama-num-ctx: 32768
+
+# Use diff edit format — works best with local coding models
+edit-format: diff
+
+# Don't auto-commit — ask first
+auto-commits: false
+
+# Skip browser-based auth
+no-browser: true
