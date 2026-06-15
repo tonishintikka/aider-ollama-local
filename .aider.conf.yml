@@ -1,13 +1,16 @@
 # Aider default config for local Ollama usage.
 # Copy this to your project root and adjust model as needed.
 
+# Architect plans, Gemma 4 writes code
+architect: true
 model: ollama_chat/qwen2.5-coder:32b
+editor-model: ollama_chat/gemma4-coder
 
 # Aider manages context size automatically for Ollama — no need to set manually.
 # Uncomment to pin context window if model behaves unexpectedly:
 # ollama-num-ctx: 32768
 
-# Use diff edit format — works best with local coding models
+# diff works best with local coding models
 edit-format: diff
 
 # Don't auto-commit — ask first
